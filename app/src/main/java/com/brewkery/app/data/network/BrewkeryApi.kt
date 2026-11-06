@@ -7,7 +7,7 @@ import retrofit2.http.Path
 
 interface BrewkeryApi {
     @GET("data.json")
-    suspend fun getMenu() : MenuResponse
+    suspend fun getMenu(): MenuResponse
 
     @GET("api/items/{id}.json")
     suspend fun getItem(
